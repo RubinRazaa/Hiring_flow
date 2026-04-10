@@ -1,4 +1,4 @@
-const N8N_WEBHOOK_URL = 'https://your-n8n-domain.com/webhook/candidate-intake'; // Replace with actual URL
+const N8N_WEBHOOK_URL = 'https://rubinrazaai.app.n8n.cloud/webhook-test/88b59644-e750-4c13-b474-f54fe328fb2f'; // Replace with actual URL
 
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('intake-form');
