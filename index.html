@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Intake | AI Firm</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <div class="header">
+                <h1>Join Us</h1>
+                <p>Submit your details to be considered for our elite engineering and research teams.</p>
+            </div>
+
+            <form id="intake-form">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required placeholder="Jane Doe">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="jane@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="+971 50 123 4567">
+                </div>
+
+                <div class="form-group">
+                    <label for="linkedin">LinkedIn Profile URL</label>
+                    <input type="url" id="linkedin" name="linkedin" required
+                        placeholder="https://linkedin.com/in/janedoe">
+                </div>
+
+                <div class="form-group">
+                    <label for="resume">Upload Resume (PDF, DOCX)</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.docx" required>
+                </div>
+
+                <button type="submit" id="submit-btn" class="submit-btn">
+                    <span class="btn-text">Submit Application</span>
+                    <div class="spinner"></div>
+                </button>
+            </form>
+
+            <div class="success-message" id="success-message">
+                <div class="check-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <h2>Application Received!</h2>
+                <p>Thank you for applying. Our team will review your application and get back to you shortly.</p>
+            </div>
+
+            <div class="error-message" id="error-message">
+                Something went wrong. Please try again later.
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
